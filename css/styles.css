@@ -1,0 +1,369 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    --primary: #2F80ED;
+    --secondary: #2F53C1;
+    --info: #76AAF5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tahoma');
+
+body {
+    font-size: 16px;
+    font-family: Tahoma, Sans-Serif;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.section-titles {
+    text-align: center;
+    margin: auto auto 50px auto;
+    color: var(--primary);
+}
+
+.text {
+    color: #333;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+
+/* ------ Styles ----- */
+h2 {
+    font-size: 39px;
+    font-weight: 600;
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Tahoma';
+    color: var(--info);
+}
+
+h4 {
+    font-size: 18px;
+    color: #222;
+}
+
+/* ------ Bootstrap Rewrite ----- */
+.card-header {
+    background-color: transparent;
+    border: none!important;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.collapsed {
+    padding: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 30px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--info);
+}
+
+.nav-item {
+    margin-right: 12px;
+}
+
+.nav-link {
+    color: #444 !important;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/* ------ Top header ----- */
+#top-header {
+    height: 40px;
+    background-color: var(--secondary);
+}
+
+#top-header-container {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    color: #eee;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials .fab {
+    margin-right: 6px;
+}
+
+.socials a {
+    color: #eee;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+.social-text {
+    font-size: 12px;
+    margin-right: 1rem;
+}
+
+/* ------ Navbar ----- */
+#navbar {
+    background-color: #fafafa !important;
+}
+
+.navbar-nav {
+    color: #222;
+}
+
+.nav-link:hover {
+    box-shadow: 0 1.5px 0 0 blue;
+}
+
+/* ------ Hero ----- */
+#hero {
+    max-height: 600px;
+    height: 535px;
+    background-image: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#caption {
+    font-family: 'Tahoma';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#sub-caption {
+    font-family: 'Tahoma';
+    font-weight: 500;
+    color: #cecece;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery-img{
+    height: 350px;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    width: auto;
+    min-height: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Info
+--------------------------------------------------------------*/
+#info {
+    background: rgba(228, 239, 255, 0.5);
+}
+
+#info li{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.facilities {
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------
+# Location
+--------------------------------------------------------------*/
+#map {
+    height: 600px;
+}
+
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+#faq {
+    background: rgba(228, 239, 255, 0.5);
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card-header {
+    border: 1px solid #ccc;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-item .fas {
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.contact-item span {
+    color: #333;
+    font-size: 18px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    background-color: var(--primary);
+    color: #eee;
+}
+
+.footer-title {
+    font-weight: 700;
+    color: #fafafa;
+}
+
+footer hr {
+    background-color: #eee;
+}
+
+.socials .fab {
+    margin-right: 10px;
+}
+
+footer a {
+    color: #eee;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: square;
+}
+
+
+@media (max-width: 800px) {
+    #top-header {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #top-header-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 160px;
+        height: auto;
+    }
+
+    #caption {
+        font-size: 36px;
+    }
+
+    .facilities {
+        flex-direction: column;
+    }
+
+    .facilities:first-child {
+        margin-bottom: 20px;
+    }
+
+    #logo2 {
+        margin: 24px auto;
+        display: block;
+        height: auto;
+    }
+
+    #form {
+        margin-bottom: 30px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    #footer-div {
+        padding-bottom: 0!important;
+    }
+
+    .socials:nth-child(2) {
+        margin-bottom: 16px;
+    }
+
+    #contact {
+        padding-bottom: 20px;
+    }
+
+    #sub-caption {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    #carouselContainer{
+        padding: 0;
+    }
+
+    #hero {
+        max-height: 70vh;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+}
